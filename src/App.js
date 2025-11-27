@@ -655,7 +655,7 @@ Yearly Total: ${formatCurrency(calculateTotalCost('yearly'))}
     let chatHistory = [];
     chatHistory.push({ role: "user", parts: [{ text: prompt }] });
     const payload = { contents: chatHistory };
-    const apiKey = "AIzaSyAfHoPAo4u4y7LbkmuHe07LE6y9H3giEOg"; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+    const apiKey = "AIzaSyCgYO0qtEMdqAE31wwI0LhuCBdCVw6Lu-o"; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
     const response = await fetch(apiUrl, {
