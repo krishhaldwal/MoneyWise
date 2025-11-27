@@ -692,7 +692,7 @@ Respond in clear, standard Markdown format. Use headings (###), bold text (**tex
     let chatHistory = [];
     chatHistory.push({ role: "user", parts: [{ text: prompt }] });
     const payload = { contents: chatHistory };
-    const apiKey = "AIzaSyB3useXANaz-R5fIoCFFmW2cDQkTxuoo08"; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+    const apiKey = "AIzaSyAeLQezNbhGCCP10XKtH7cVQK98K0mfz7I"; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
     const response = await fetch(apiUrl, {
